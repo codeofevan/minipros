@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/order_detail/order_detail",
+    "pages/order_list/order_list",
+    "pages/update_ticket/update_ticket",
+    "pages/update_hotel/update_hotel",
+    "pages/hotel_detail/hotel_detail",
+    "pages/update_order/update_order"
+  ],
+  "window": {
+    "backgroundColor": "#59A5F0",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#59A5F0",
+    "navigationBarTitleText": "东航旅行",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar":{
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "预定",
+        "iconPath": "images/tab1.png",
+        "selectedIconPath": "images/tabcolor1.png"
+      },
+      {
+        "pagePath": "pages/order_list/order_list",
+        "text": "订单",
+        "iconPath": "images/tab2.png",
+        "selectedIconPath": "images/tabcolor2.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "serverUrl":"/"
+}

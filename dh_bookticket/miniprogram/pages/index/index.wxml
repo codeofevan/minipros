@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 1.选项卡 -->
+  <view class="card">
+    <button class="{{ isActive?'active':'' }}" plain="true" bindtap='chgOneWay'>单程</button>
+    <button class="{{ !isActive?'active':'' }}" plain="true" bindtap='chgRoundTrip'>往返</button>
+  </view>
+  <!-- 2.航线 -->
+  <view class="line">
+    <view class="line-city">
+      <view bindtap="selectCity">{{ startCity }}</view>
+      <view bindtap="selectCity">{{ targetCity }}</view>
+      <view class="img">
+        <image src="/images/samll_plane.png"></image>
+        <image src="/images/changeCity_bg.png"></image>
+      </view>
+    </view>
+    <view class="line-date">
+      <view>
+        <text>{{ startDate }}</text>
+        <text>周四出发</text>
+      </view>
+      <view>
+        <text>{{ arriveDate }}</text>
+        <text>周五返回</text>
+      </view>
+    </view>
+  </view>
+</view>
