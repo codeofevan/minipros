@@ -26,4 +26,22 @@
       </view>
     </view>
   </view>
+  <!-- 3.酒店 -->
+  <view class="line">
+    <text>酒店</text>
+    <view class="line-city">
+      <view bindtap="selectCity">{{ startCity }}</view>
+      <view bindtap="selectCity">{{ targetCity }}</view>
+    </view>
+    <view class="line-date">
+      <view>
+        <text>{{ startDate }}</text>
+        <text>周四出发</text>
+      </view>
+      <view>
+        <text>{{ arriveDate }}</text>
+        <text>周五返回</text>
+      </view>
+    </view>
+  </view>
 </view>
